@@ -1,0 +1,221 @@
+/*#FFFFFF*/
+/*#00171F*/
+/*#003459*/
+/*#007EA7*/
+/*#00A8E8*/
+
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+.sidenav p {
+    padding: 6px 8px 6px 24px;
+    list-style-type: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav ol {
+    padding: 6px 8px 6px 24px;
+    list-style-type: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+}
+.sidenav ul {
+    padding: 6px 8px 6px 24px;
+    list-style-type: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+body, html {
+    margin: 0;
+    /*height: 100%;*/
+    /*background: linear-gradient(-90deg,*/
+    /*#FFFFFF, #FFFFFF 10%,*/
+    /*#00171F 20%, #00171F 40%,*/
+    /*#003459 40%, #003459 60%,*/
+    /*#007EA7 60%, #007EA7 80%,*/
+    /*#00A8E8 80%, #00A8E8 )*/
+}
+.color-back {
+    display: flex;
+    position: absolute;
+    /*border: 1px black;*/
+    height: 100%;
+    width: calc(100% - 160px);
+    top: 0;
+    left: 160px;
+    z-index: -1;
+    flex-direction: row-reverse;
+}
+
+.col-1 {
+    background: #FFFFFF;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.col-1:hover {
+    filter: brightness(90%);
+}
+.col-1 img {
+    /*position: relative;*/
+    max-width: 100%;
+    padding-bottom: 5px;
+    /*width: 100%;*/
+
+}
+.col-2 {
+    background: #00171F;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.col-2:hover {
+    filter: brightness(150%);
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding-bottom: 5px;
+}
+
+.col-3 {
+    background: #003459;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-3:hover {
+    filter: brightness(125%);
+}
+.col-3 img {
+    max-width: 100%;
+    z-index: 1;
+
+}
+
+.col-4 {
+    background: #007EA7;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.col-4:hover {
+    filter: brightness(110%);
+}
+.col-5 {
+    background: #00A8E8;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.col-5:hover {
+    filter: brightness(115%);
+}
+/* The hero image */
+.pic_container {
+    height: 40%;
+    min-height: 200px;
+    min-width: 370px;
+    max-width: 40%;
+
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: left;
+    background-repeat: no-repeat;
+    /*background-size: 400px;*/
+    position: relative;
+}
+.hero-image {
+    /* The image used */
+    background-image: url("self_pic.jpg");
+    -webkit-filter: grayscale(25%);
+
+    /* Set a specific height */
+    height: 100%;
+    top: 10px;
+    left: 0px;
+    flex: 1;
+    min-height: 20vw;
+    /*min-width: 370px;*/
+    max-width: 20vw;
+
+
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-size: 400px;*/
+    position: relative;
+    border-radius: 10%
+}
+.hero-image:hover {
+    -webkit-filter: grayscale(0%);
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 2px #00171F;
+    padding-right: 15%;
+}
+section {
+    text-align: left;
+}
