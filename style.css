@@ -134,13 +134,33 @@ body, html {
     justify-content: center;
     align-items: center;
 }
+@keyframes wiggle {
+    0% {
+        transform: translateX(0px)
+    }
+    33% {
+        transform: translateX(6px)
+    }
+    66% {
+        transform: translateX(-12px)
+    }
+    100% {
+        transform: translateX(6px)
+    }
+}
 .col-3:hover {
     filter: brightness(125%);
+
+
 }
 .col-3 img {
     max-width: 100%;
     z-index: 1;
+    transition: 1s;
 
+}
+.col-3 img:hover {
+    animation: wiggle .5s;
 }
 
 .col-4 {
