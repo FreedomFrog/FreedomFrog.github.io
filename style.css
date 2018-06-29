@@ -197,9 +197,16 @@ body, html {
     /*background-size: 400px;*/
     position: relative;
 }
+#image {
+    min-height: 400px;
+    position: relative;
+    flex: 1;
+    max-width: 17vw;
+    width: 100%
+}
 .hero-image {
     /* The image used */
-    background-image: url("self_pic.png");
+    /*background-image: url("self_pic.png");*/
     -webkit-filter: grayscale(100%);
 
     /* Set a specific height */
@@ -207,7 +214,7 @@ body, html {
     top: 10px;
     left: 0px;
     flex: 1;
-    min-height: 20vw;
+    min-height: 400px;
     /*min-width: 370px;*/
     max-width: 20vw;
 
